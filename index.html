@@ -71,44 +71,64 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tier 1 -->
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col justify-between">
                 <div>
                     <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">Tier 1</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">The Execution Toolkit</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
                         Skip the design overwhelm. Get plug-and-play outreach trackers, systematic exposure templates, and structured reflection frameworks designed to make taking action completely mechanical.
                     </p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 flex items-baseline justify-between">
-                    <span class="text-xs text-slate-400">One-Time Asset</span>
-                    <span class="text-xl font-black text-slate-900">BDT 199</span>
+                <div>
+                    <div class="pt-4 border-t border-slate-100 flex items-baseline justify-between mb-4">
+                        <span class="text-xs text-slate-400">One-Time Asset</span>
+                        <span class="text-xl font-black text-slate-900">BDT 199</span>
+                    </div>
+                    <a id="tier1-cta" href="#" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 px-4 rounded-xl shadow-sm transition">
+                        💬 Order via WhatsApp
+                    </a>
                 </div>
             </div>
+
+            <!-- Tier 2 -->
             <div class="bg-white p-6 rounded-2xl shadow-md border border-blue-200 ring-4 ring-blue-50 flex flex-col justify-between relative">
                 <span class="absolute -top-3 right-4 bg-blue-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Active</span>
                 <div>
                     <span class="text-xs font-bold tracking-widest text-blue-600 uppercase">Tier 2</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">The Challenge Pod</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
                         Break out of creative isolation. Enter a high-structure, fast-paced cohort with live target checkpoints, daily sprint metrics, and a practical system to report your outcomes back to.
                     </p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 flex items-baseline justify-between">
-                    <span class="text-xs text-slate-400">Cohort Entry</span>
-                    <span class="text-xl font-black text-slate-900">BDT 299</span>
+                <div>
+                    <div class="pt-4 border-t border-slate-100 flex items-baseline justify-between mb-4">
+                        <span class="text-xs text-slate-400">Cohort Entry</span>
+                        <span class="text-xl font-black text-slate-900">BDT 299</span>
+                    </div>
+                    <a id="tier2-cta" href="#" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 px-4 rounded-xl shadow-sm transition">
+                        💬 Join Pod via WhatsApp
+                    </a>
                 </div>
             </div>
+
+            <!-- Tier 3 -->
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 flex flex-col justify-between">
                 <div>
                     <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">Tier 3</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">1-on-1 Personal Audit</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
                         An intensive, individual alignment mapping. We run a meticulous audit of your specific avoidance behaviors, create custom exposure ladders, and track your metrics via milestone reviews.
                     </p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 flex items-baseline justify-between">
-                    <span class="text-xs text-slate-400">Monthly Retainer</span>
-                    <span class="text-xl font-black text-slate-900">BDT 1,299</span>
+                <div>
+                    <div class="pt-4 border-t border-slate-100 flex items-baseline justify-between mb-4">
+                        <span class="text-xs text-slate-400">Monthly Retainer</span>
+                        <span class="text-xl font-black text-slate-900">BDT 1,299</span>
+                    </div>
+                    <a id="tier3-cta" href="#" class="block text-center bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs py-2.5 px-4 rounded-xl shadow-sm transition">
+                        ✉️ Book Audit via Email
+                    </a>
                 </div>
             </div>
         </div>
@@ -181,6 +201,7 @@
         </div>
     </section>
 
+    <!-- Admin Panel -->
     <div id="admin-panel" class="hidden max-w-5xl mx-auto mx-6 my-6 p-6 bg-yellow-50 border border-yellow-200 rounded-2xl shadow-inner">
         <h2 class="text-base font-bold text-yellow-800 mb-2 uppercase tracking-wider">🔧 Verified Management Control Center</h2>
         <div class="grid md:grid-cols-2 gap-6">
@@ -193,6 +214,16 @@
                 <div>
                     <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Value Proposition Copy</label>
                     <textarea id="input-subheadline" rows="2" class="w-full p-2 border rounded text-xs" oninput="processUpdates()"></textarea>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">WhatsApp Endpoint</label>
+                        <input type="text" id="input-whatsapp" class="w-full p-2 border rounded text-xs" oninput="processUpdates()">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Secure Email Gateway</label>
+                        <input type="email" id="input-email" class="w-full p-2 border rounded text-xs" oninput="processUpdates()">
+                    </div>
                 </div>
                 <hr class="border-slate-100">
                 <form id="transaction-form" onsubmit="addTransaction(event)">
@@ -225,7 +256,12 @@
         </div>
     </div>
 
-    <footer class="bg-slate-950 text-slate-500 text-center py-8 text-[11px] border-t border-slate-900 mt-12">
+    <footer class="bg-slate-950 text-slate-500 text-center py-8 text-[11px] border-t border-slate-900 mt-12 space-y-2">
+        <div class="text-slate-400 font-medium space-x-4">
+            <span>WhatsApp: <a id="display-whatsapp-link" href="#" target="_blank" class="text-blue-400 hover:underline">...</a></span>
+            <span class="text-slate-700">|</span>
+            <span>Email: <a id="display-email-link" href="#" class="text-blue-400 hover:underline">...</a></span>
+        </div>
         <p>&copy; 2026 Pika Operational Systems. Protected and cached securely via public Git ledger architectures.</p>
     </footer>
 
@@ -247,8 +283,14 @@
         function renderDOM() {
             document.getElementById('display-headline').innerText = state.headline;
             document.getElementById('display-subheadline').innerText = state.subheadline;
+            
             document.getElementById('input-headline').value = state.headline;
             document.getElementById('input-subheadline').value = state.subheadline;
+            document.getElementById('input-whatsapp').value = state.whatsapp || '';
+            document.getElementById('input-email').value = state.email || '';
+
+            // Render Dynamic Contact Touchpoints
+            updateContactGateways();
             
             updateRevenueDisplay();
             generateJsonOutput();
@@ -261,11 +303,32 @@
             document.getElementById('admin-panel').classList.toggle('hidden');
         }
 
+        function updateContactGateways() {
+            const cleanWA = (state.whatsapp || '').replace(/[^0-9]/g, '');
+            const emailAddr = state.email || '';
+
+            // Set Tier CTAs
+            document.getElementById('tier1-cta').href = `https://wa.me/${cleanWA}?text=Hi%21%20I%20want%20to%20purchase%20Tier%201%3A%20The%20Execution%20Toolkit.`;
+            document.getElementById('tier2-cta').href = `https://wa.me/${cleanWA}?text=Hi%21%20I%20want%20to%20join%20Tier%202%3A%20The%20Challenge%20Pod%20cohort.`;
+            document.getElementById('tier3-cta').href = `mailto:${emailAddr}?subject=Pika%20Systems%20-%20Tier%203%20Inquiry`;
+
+            // Set Footer displays
+            document.getElementById('display-whatsapp-link').innerText = state.whatsapp || 'None';
+            document.getElementById('display-whatsapp-link').href = `https://wa.me/${cleanWA}`;
+            document.getElementById('display-email-link').innerText = emailAddr || 'None';
+            document.getElementById('display-email-link').href = `mailto:${emailAddr}`;
+        }
+
         function processUpdates() {
             state.headline = document.getElementById('input-headline').value;
             state.subheadline = document.getElementById('input-subheadline').value;
+            state.whatsapp = document.getElementById('input-whatsapp').value;
+            state.email = document.getElementById('input-email').value;
+
             document.getElementById('display-headline').innerText = state.headline;
             document.getElementById('display-subheadline').innerText = state.subheadline;
+            
+            updateContactGateways();
             generateJsonOutput();
         }
 
